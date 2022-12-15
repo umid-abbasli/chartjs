@@ -1,0 +1,267 @@
+body{
+    background-color: rgb(188, 130, 242);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.hello{
+    /* background: rgb(246, 242, 255); */
+    padding: 30px;
+    font: 56px arial;
+    width: 600px;
+    text-align: center;
+    color: #eee;
+    margin: 18vh auto;
+    text-transform: capitalize;
+}
+.hello h2{
+    opacity: 0;
+    animation: hello;
+    animation-duration: 1.7s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.hello h2 span{
+    animation: hello2;
+    animation-duration: 2.1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.hello h2 span h3{ 
+    animation: hello3;
+    animation-duration: 2.9s;
+    color: rgb(255, 103, 103);
+    animation-delay: .7s;
+    font-size: 60px;
+    animation-fill-mode: forwards;
+}
+.start {
+    display: flex;
+    justify-content: center;
+}
+.start button{
+    padding: 14px 50px;
+    font-size: 18px;
+    background: #4358c1;
+    border: none;
+    color: #fff;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    animation-name: start;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-duration: .9s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start button span{
+    margin-left: 15px;
+}
+.start button img{
+    opacity: 0;
+    transition: .8s;
+    width: 20px;
+}
+.start button:hover{
+    color: #4358c1;
+    background-color: #fff;
+    border: 1px solid #4358c1;
+    margin-left: 0;
+}
+.start button:hover img{
+    opacity: 1;
+    margin-left: 15px;
+}
+@keyframes hello{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes hello2{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes start{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.witch{
+    display: none;
+    margin: 20vh 0;
+}
+.hide-hello{
+    animation-name: hidehello;
+    animation-fill-mode: forwards;
+    animation-duration: 1.9s;
+    animation-direction: alternate;
+    transition: .4s;
+}
+.noneddisplay{
+    display: none;
+}
+@keyframes hidehello{
+    0%{opacity: 1;}
+    80%{opacity: 1;transform: translateX(-10000px);}
+    100%{display: none;transform: translateX(-10000px);}
+}
+.hide-hello2{
+    animation-name: hidehello;
+    animation-fill-mode: forwards;
+    animation-duration: 1.9s;
+    animation-direction: alternate;
+    transition: .4s;
+}
+.static-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.static-card{
+    width: 310px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.static-card:hover{
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 48px 100px 0px;
+    transform: translateY(-30px);
+}
+.static-card img{
+    width: 50%;
+    margin: 0 auto;
+}
+.static-card h2{
+    padding: 12px 0;
+    font-size: 32px;
+}
+.container h2{
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+    padding:0 0 40px 0;
+}
+.next{
+    margin: 40px 0;    
+    display: flex;
+    justify-content: end;
+}
+.next button{
+    padding: 14px 50px;
+    font-size: 18px;
+    background: #4358c1;
+    border: none;
+    color: #fff;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    animation-name: start;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-duration: .9s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.next button span{
+    margin-left: 15px;
+}
+.next button img{
+    opacity: 0;
+    transition: .8s;
+    width: 20px;
+}
+.static-card h2{
+    font-size: 32px;
+    color: #000;
+    margin: 30px 0 0 0;
+}
+.next button:hover{
+    color: #4358c1;
+    background-color: #fff;
+    border: 1px solid #4358c1;
+    margin-left: 0;
+}
+.next button:hover img{
+    opacity: 1;
+    margin-left: 15px;
+}
+.show-stats{
+    display: block !important;
+    transition: .4s;
+}
+.diaqram{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.canva{
+    width: 40%;
+}
+.chartBox h2{
+    font-size: 36px;
+    color: #fff;
+    margin: 10px 0 ;
+    text-align: center;
+    text-transform: capitalize;
+}
+.stats{
+    display: none;
+    margin: 18vh auto;
+}
+.section{
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+    height: 100%;
+    max-height: 600px;
+    overflow-y: scroll;
+    width: 400px;
+}
+.section div{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #c2ccff;
+}
+.section h2{
+    padding: 10px 0;
+    font-size: 36px;
+}
+.section input{
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 7px 15px 7px 15px;
+    margin: 15px 0;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    background-color: transparent;
+}
+.section h3{
+    margin: 20px auto 0;
+    padding: 25px 0 10px 0;
+    width: 84%;
+    font-size: 30px;
+    color: #4358c1;
+}
+input[type="color"]{
+    width: 80px;
+    height: 50px;
+    background-color: transparent;
+    margin: 5px auto;
+    border: none;
+}

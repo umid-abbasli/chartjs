@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div id="hello" class="hello">
+        <h2>hello <span>Welcome to my <h3>Chartjs</h3></span></h2>
+        <img class="animate__animated animate__fadeInRight" src="/img/shime1.png" alt="">
+        <div class="start">
+            <button onclick="hidehello()"><span>start</span> <img src="/img/pointing-right.png" alt=""></button>
+        </div>
+    </div>
+    <div id="witch" class="witch animate__animated">
+    <div class="container">
+        <h2>
+            Select Table 
+        </h2>
+        <div class="static-cards">
+            <div onclick="chartType('line')" class="static-card">
+                <img src="/img/line-graph.png" alt=""/>
+                <h2>Line</h2>
+            </div>
+            <div onclick="chartType('bar')" class="static-card">
+                <img src="/img/bar-chart.png" alt=""/>
+                <h2>Bar</h2>
+            </div>
+            <div onclick="chartType('pie')"  class="static-card">
+                <img src="/img/stats.png" alt=""/>
+                <h2>Pie</h2>
+            </div>
+            <div onclick="chartType('radar')"  class="static-card">
+                <img src="/img/analytic-graph.png" alt=""/>
+                <h2>Radar</h2>
+            </div>
+        </div>
+        <div class="next" onclick="sh()">  <button ><span>start</span> <img src="/img/pointing-right.png" alt=""></button></div>
+    </div>
+    </div>
+    <div id="stats" class="stats animate__animated">
+        <div class="diaqram">
+            <div class="canva">
+                <div class="chartMenu">
+                  </div>
+                  <div class="chartCard">
+                    <div class="chartBox">
+                        <h2>Statistics</h2>
+                      <canvas id="myChart"></canvas>
+                      <span></span>
+                    </div>
+                  </div>
+                  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  <script>
+                  // setup 
+                 
+                  </script>
+            </div>
+            <div class="section">
+                <h2>Options</h2>
+                <input type="text" name="" id="" oninput="changeTitlee(this)" placeholder="Name :"  value="">
+          <div>
+            <h3>
+                1th stats:
+            </h3>
+            <input type="text" name="" id="" oninput="changeTitle(this)" placeholder="Name :"  value="">
+            <h4> Change Stats Color<input type="color" oninput="chageDesc(this)" value="#a9d6ee" name=""  placeholder="Description:" id="color"></h4>
+            <input type="number" name="" id="" oninput="changeTotal(this)" placeholder="Value"  value="">
+          </div>
+               <div>
+                <h3>
+                    2th stats :
+                </h3>
+                <input type="text" name="" id="" oninput="changeTitle2(this)" placeholder="Name :"  value="">
+                <h4> Change Stats Color<input type="color" oninput="chageDesc2(this)" value="" name=""  placeholder="Description:" id="color2"></h4>
+                <input type="number" name="" id="" oninput="changeTotal2(this)" placeholder="Value"  value="">
+               </div>
+                <div>
+                    <h3>
+                        3th stats :
+                    </h3>
+                    <input type="text" name="" id="" oninput="changeTitle3(this)" placeholder="Name :"  value="">
+                    <h4> Change Stats Color<input type="color" oninput="chageDesc3(this)" value="" name=""  placeholder="Description:" id="color3"></h4>
+                    <input type="number" name="" id="" oninput="changeTotal3(this)" placeholder="Value :"  value="">
+                </div>
+           <div>
+            <h3>
+                4th stats:
+            </h3>
+            <input type="text" name="" id="" oninput="changeTitle4(this)" placeholder="Name :"  value="">
+            <h4> Change Stats Color<input type="color" oninput="chageDesc4(this)" value="" name=""  placeholder="Description:" id="color4"></h4>
+            <input type="number" name="" id="" oninput="changeTotal4(this)" placeholder="Value :"  value="">
+           </div>
+           <div>
+            <h3>
+                5th stats:
+            </h3>
+            <input type="text" name="" id="" oninput="changeTitle5(this)" placeholder="Name :"  value="">
+            <h4> Change Stats Color<input type="color" oninput="chageDesc5(this)" value="" name=""  placeholder="Description:" id="color5"></h4>
+            <input type="number" name="" id="" oninput="changeTotal5(this)" placeholder="Value :"  value="">
+           </div>
+              <div>
+                <h3>
+                    6th stats:
+                </h3>
+                <input type="text" name="" id="" oninput="changeTitle6(this)" placeholder="Name :"  value="">
+                <h4> Change Stats Color<input type="color" oninput="chageDesc6(this)" value="" name=""  placeholder="Description:" id="color6"></h4>
+                <input type="number" name="" id="" oninput="changeTotal6(this)" placeholder="Value :"  value="">
+              </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
