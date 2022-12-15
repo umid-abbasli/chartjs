@@ -207,7 +207,9 @@ body{
     gap: 40px;
 }
 .canva{
-    width: 40%;
+    width: 60%;
+    min-width: 300px;
+    /* height: 500px; */
 }
 .chartBox h2{
     font-size: 36px;
